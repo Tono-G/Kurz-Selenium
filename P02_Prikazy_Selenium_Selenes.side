@@ -1,0 +1,151 @@
+{
+  "id": "6d7000ea-e8f9-4f42-b586-678fbc6fd46c",
+  "version": "2.0",
+  "name": "P02_Prikazy_Selenium_Selenes",
+  "url": "https://www.google.sk/",
+  "tests": [{
+    "id": "a42c6d07-6158-4595-a9dc-5ac63bcd188a",
+    "name": "TC_001_Otvorenie_Web_Stranok",
+    "commands": [{
+      "id": "50ebb4ea-a8a5-4afa-9183-8d909c6bebb3",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.google.sk/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb168893-df82-4004-bcca-8817a7629506",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.facebook.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c041e7b6-7ae7-4577-8766-b7f3625d5ae6",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.slovensko.sk/sk/titulna-stranka",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8bac296f-931d-4383-ab64-8c4464fd2647",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.selenium.dev/",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4f67d5d6-a26d-46d4-a760-c8279beee3c0",
+    "name": "TC_002_Cakanie_Element_Wait",
+    "commands": [{
+      "id": "88f23a50-a93a-44e1-82fe-628c3267b9b0",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.facebook.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "156ab1aa-5101-40d1-a1fc-f63dc97f3486",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.fb_logo",
+      "targets": [
+        ["css=.fb_logo", "css:finder"],
+        ["xpath=//img[@alt='Facebook']", "xpath:img"],
+        ["xpath=//div[@id='content']/div/div/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div/div/div/img", "xpath:position"]
+      ],
+      "value": "3000"
+    }, {
+      "id": "144c0598-6dfd-4d96-98be-90ca7de76736",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.slovensko.sk/sk/titulna-stranka",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "890c0d0d-b891-4a2a-b5c3-0105b88f69fa",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=#logo > img",
+      "targets": [
+        ["css=#logo > img", "css:finder"],
+        ["xpath=//img[@alt='Ústredný portál verejných služieb ľuďom']", "xpath:img"],
+        ["xpath=//a[@id='logo']/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": "2000"
+    }, {
+      "id": "c2c2aa90-94ab-4b35-9dbf-d84c65f66e4b",
+      "comment": "",
+      "command": "echo",
+      "target": "Test uspesny",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c0f277e8-c590-4827-9d69-65cb5ba0c63e",
+    "name": "TC_003_Cakanie_Element_Wait_Visible",
+    "commands": [{
+      "id": "8b764604-712c-4a35-8e0b-f13f5706987d",
+      "comment": "",
+      "command": "//Moja poznamka zaciatok testu",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "09bf6d4d-40d7-42a2-8127-c0d69e0632f8",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.google.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ac510bcd-8a82-4a96-9fe8-5e2a5a04f2ba",
+      "comment": "",
+      "command": "//waitForElementVisible",
+      "target": "css=.fb_logo",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "a4f53ab0-4d37-4c18-9786-4f4471ff09ff",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.alza.sk/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c8665bb0-2961-47df-a365-b071e9fa491e",
+      "comment": "",
+      "command": "//waitForElementVisible",
+      "target": "css=#logo > img",
+      "targets": [],
+      "value": "2000"
+    }, {
+      "id": "aefa2183-b437-4c9c-b390-e2cdb40fb0fe",
+      "comment": "",
+      "command": "echo",
+      "target": "Test uspesny",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c8bce981-41bf-4c27-8fb9-cdbf9f1b8637",
+      "comment": "",
+      "command": "//Moja poznamka koniec testu",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "66c0cd3b-620c-481e-ba4f-a8b71f38b7d1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a42c6d07-6158-4595-a9dc-5ac63bcd188a"]
+  }],
+  "urls": ["https://www.google.sk/"],
+  "plugins": []
+}
